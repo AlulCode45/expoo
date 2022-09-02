@@ -1,0 +1,407 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;wght@500;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;400;500;600;700;800;900&display=swap');
+
+:root {
+    --mainColor: #1F85C4;
+    --secondaryColor: #73CBF8;
+}
+
+html {
+    overflow-x: hidden;
+}
+
+header {
+    /* background: linear-gradient(rgba(0, 0, 0, 0.4),
+            rgba(0, 0, 0, 0.4)), url('../image/bg.png');
+    background-size: cover; */
+    /* width: 100vw;
+    height: 100vh; */
+    /* height: calc(100vh + 66px); */
+    /* margin-top: 66px; */
+}
+
+footer {
+    margin-top: 150px;
+    padding-top: 140px;
+    background: url('../image/bg-btm.png');
+    background-size: 100% 100%;
+    width: 100vw;
+    height: 400px;
+}
+
+/* css login  */
+
+/* end css login  */
+
+.main-footer {
+    width: 100%;
+    background: linear-gradient(0deg, rgba(247, 247, 247, 0.2), rgba(247, 247, 247, 0.2)), rgba(60, 147, 201, 0.5);
+    backdrop-filter: blur(150px);
+    height: 360px;
+}
+
+.navbar-brand img {
+    width: auto;
+    height: 40px;
+}
+
+.navbar-brand .cas-text {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+}
+
+.nav-link {
+    font-weight: 600 !important;
+    font-family: 'Poppins', sans-serif !important;
+}
+
+.latar-belakang h1 {
+    color: var(--mainColor);
+    font-weight: 700;
+    font-family: 'Poppins', sans-serif;
+}
+
+.latar-belakang p {
+    font-size: 17px;
+    line-height: 23px;
+    font-family: 'Poppins', sans-serif;
+    color: #000000;
+}
+
+.bg-top {
+    margin-top: -120px;
+    background: url('../image/wave-top.png');
+    background-size: 100% 100%;
+    width: 100vw;
+    height: 300px;
+    position: absolute;
+}
+
+.advantages-card img {
+    width: 200px;
+    height: 170px;
+}
+
+.bg-main {
+    background-color: var(--mainColor) !important;
+}
+
+.bg-main .active {
+    background-color: rgba(255, 255, 255, 0.1) !important;
+    border-left: 2px solid white !important;
+    border-radius: 2px !important;
+    padding: 15px;
+}
+
+.bg-light {
+    /* background-color: #FDFDFD !important; */
+}
+
+.nav-link {
+    margin-top: 10px !important;
+    margin-bottom: 10px !important;
+}
+
+@media (min-width: 1024px) {
+    .main-ilustration {
+        width: 400px;
+        height: 350px;
+    }
+
+    .advantages-card h5 {
+        width: 250px !important;
+    }
+
+    .start-content {
+        margin-top: 250px;
+    }
+
+    .card-login {
+        width: 500px;
+    }
+
+    .card-login .btn-login {
+        width: 100%;
+    }
+
+    .welcome-text, #typed {
+        font-size: 45px;
+        color: var(--mainColor);
+    }
+
+    header p {
+        width: 500px;
+        font-size: 17.5px;
+    }
+
+    .btn-login {
+        background: var(--mainColor) !important;
+        border-radius: 20px !important;
+        color: #fff !important;
+        width: 90px;
+    }
+}
+
+/* 
+  ##Device = Tablets, Ipads (portrait)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1023px) {
+
+    /* CSS */
+
+}
+
+/* 
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+
+@media (min-width: 320px) and (max-width: 767px) {
+
+    .main-footer {
+        height: 600px;
+    }
+
+    .latar-belakang {
+        margin-bottom: 100px;
+    }
+
+    .latar-belakang p {
+        font-size: 12px;
+        width: 300px;
+    }
+
+    .main-ilustration {
+        display: none;
+    }
+
+    .start-content {
+        margin-top: 100px;
+    }
+
+    .latar-belakang-ilustration {
+        width: 340px;
+        height: 300px;
+    }
+
+    .bg-top {
+        height: 200px;
+    }
+
+    /* .start-content img {
+        display: none;
+    } */
+
+}
+
+/* ---------------------------------------------------
+    SIDEBAR STYLE
+----------------------------------------------------- */
+
+.line {
+    width: 100%;
+    height: 1px;
+    border-bottom: 1px dashed #ddd;
+    margin: 40px 0;
+}
+
+.wrapper {
+    display: flex;
+    width: 100%;
+    align-items: stretch;
+}
+
+#sidebar {
+    min-width: 250px;
+    max-width: 250px;
+    background: #7386D5;
+    color: #fff;
+    transition: all 0.3s;
+}
+
+#sidebar.active {
+    margin-left: -250px;
+}
+
+#sidebar .sidebar-header {
+    padding: 20px;
+}
+
+#sidebar .sidebar-header a {
+    font-size: 30px;
+}
+
+#sidebar ul.components {
+    padding: 20px 0;
+    border-bottom: 1px solid #47748b;
+}
+
+#sidebar ul p {
+    color: #fff;
+    padding: 10px;
+}
+
+#sidebar ul li a {
+    padding: 10px;
+    font-size: 1.1em;
+    display: block;
+}
+
+#sidebar ul li a:hover {
+    color: #fff !important;
+    background: rgba(255, 255, 255, 0.1);
+    border-left: 2px solid white;
+}
+
+a[data-toggle="collapse"] {
+    position: relative;
+}
+
+#content {
+    width: 100%;
+    min-height: 100vh;
+    transition: all 0.3s;
+}
+
+/* ---------------------------------------------------
+    MEDIAQUERIES
+----------------------------------------------------- */
+
+@media (max-width: 768px) {
+    #sidebar {
+        margin-left: -250px;
+    }
+
+    #sidebar.active {
+        margin-left: 0;
+        z-index: 9999;
+        position: fixed;
+        height: 100vh;
+    }
+
+    #sidebarCollapse span {
+        display: none;
+    }
+
+    .task-title h5 {
+        font-size: 17px !important;
+    }
+
+    .task-icon {
+        width: 40px !important;
+        height: 40px !important;
+    }
+
+    .list-task {
+        height: auto !important;
+        padding-bottom: 20px;
+    }
+}
+
+
+/* Dashboard style */
+.font-mulish {
+    font-family: 'Mulish', sans-serif !important;
+}
+
+.class-header {
+    border-radius: 28px 28px 30px 30px !important;
+    background-color: var(--secondaryColor) !important;
+    height: 130px;
+}
+
+.class-card {
+    border-radius: 28px !important;
+}
+
+.class-card h4 {
+    font-family: 'Mulish', sans-serif !important;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 23px;
+    /* line-height: 20px; */
+}
+
+.class-card span {
+    background-color: #46A6DC;
+}
+
+.card-view-class {
+    border-radius: 16px !important;
+}
+
+.card-view-class .card-header {
+    border-radius: 16px 16px 150px 0px !important;
+    background-color: var(--secondaryColor) !important;
+    height: 130px;
+}
+
+.list-task {
+    background: #D9D9D9 !important;
+    border-radius: 1px 100px 100px 1px !important;
+    height: 80px;
+}
+
+.list-task:hover {
+    /* box-shadow: 9px 9px 9px var(--secondaryColor); */
+}
+
+.task-icon {
+    background-color: var(--secondaryColor);
+    width: 50px;
+    height: 50px;
+}
+
+.task-title {
+    line-height: 2px;
+}
+
+.task-title h5 {
+    font-family: 'Mulish', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.task-title p {
+    font-family: 'Mulish', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 13px;
+}
+
+.comment-form {
+    width: 250px !important;
+}
+
+.comment-form input {
+    background-color: #D9D9D9 !important;
+}
+
+.submit-comment {
+    margin-left: -50px !important;
+    z-index: 2;
+}
+
+.btn-primary {
+    background-color: var(--mainColor) !important;
+}
+
+#filter {
+    background-color: #F6F6F6;
+    width: 250px !important;
+}
+
+.accordion-button {
+    background-color: var(--secondaryColor) !important;
+    color: white !important;
+}
+
+
+@media (min-width: 320px) and (max-width: 767px) {
+    .comment-form {
+        width: 100% !important;
+    }
+}
