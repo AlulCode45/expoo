@@ -8,7 +8,7 @@
                     <a href="{{ route('lihat-kelas', $subject->id) }}" class="text-decoration-none">
                         <div class="card-header class-header d-flex">
                             <div class="row">
-                                <div class="col-7 my-auto">
+                                <div class="col-6 my-auto">
                                     <h4 class="text-white">{{ $subject->subjects_name }}</h4>
                                 </div>
                                 <div class="col-5">

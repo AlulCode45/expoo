@@ -14,7 +14,7 @@
                 </div>
                 <div class="form-group mt-3">
                     <div class="custom-file">
-                        <label for="attachment">Attachment</label>
+                        <label for="attachment">File pendukung</label>
                         <input type="file" class="custom-file-input form-control" name="task-editor" id="task-editor-1">
                     </div>
                 </div>

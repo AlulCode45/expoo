@@ -69,7 +69,8 @@ class AuthController extends Controller
     }
     public function logout()
     {
-        Auth::logout();
+        Auth::guard('teacher')->logout();
+        Auth::guard('student')->logout();
         return redirect()->to('login')->with('success', 'Logout berhasil');
     }
 }

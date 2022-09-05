@@ -17,6 +17,8 @@
         integrity='sha512-8pHNiqTlsrRjVD4A/3va++W1sMbUHwWxxRPWNyVlql3T+Hgfd81Qc6FC5WMXDC+tSauxxzp1tgiAvSKFu1qIlA=='
         crossorigin='anonymous'></script>
     <script src="{{ asset('ckeditor5/build/ckeditor.js') }}"></script>
+    <link rel="stylesheet" href="{{ asset('dataTable/datatables.css') }}">
+    @stack('top-script')
     <style>
         body {
             background-color: #F7FBFE !important
@@ -41,6 +43,7 @@
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <script src="{{ asset('assets/js/bootstrap.bundle.min.js') }}"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="{{ asset('dataTable/datatables.min.js') }}"></script>
     <script>
         $(document).ready(function() {
             $('#sidebarCollapse').on('click', function() {

@@ -39,8 +39,14 @@ Route::middleware([Student::class])->group(function () {
 });
 
 Route::middleware([Teacher::class])->group(function () {
-    Route::get('guru', [TeacherController::class, 'index']);
+    Route::get('guru', [TeacherController::class, 'index'])->name('guru');
     Route::prefix('guru')->group(function () {
+        Route::get('tambah-tugas/{id_class}', [TeacherController::class, 'add_task'])->name('guru.add_task');
+        Route::get('kelola-siswa', [TeacherController::class, 'manage_students'])->name('guru.manage_students');
+        Route::get('kelola-tugas', [TeacherController::class, 'manage_tasks'])->name('guru.manage_tasks');
+        Route::get('kelola-kelas', [TeacherController::class, 'manage_classes'])->name('guru.manage_classes');
+        Route::get('lihat-kelas/{id_class}', [TeacherController::class, 'view_class'])->name('guru.view_class');
+        Route::get('lihat-tugas/{id_task}', [TeacherController::class, 'view_task'])->name('guru.view_task');
     });
 });
 Route::get('logout', [AuthController::class, 'logout']);
