@@ -29,7 +29,7 @@
                             height="50" alt="">
                     </a>
                     <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">Pengaturan Akun</a></li>
+                        <li><a class="dropdown-item" href="#">Akun Saya</a></li>
                         <li><a class="dropdown-item" href="/logout">Keluar</a></li>
                     </ul>
                 </div>
