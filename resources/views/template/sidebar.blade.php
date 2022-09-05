@@ -53,12 +53,6 @@
             </li>
         @endif
         <hr class="text-white">
-        <li class="mt-5">
-            <a href="#" class="nav-link link-light fw-normal">
-                <i class="bi me-2 fa fa-gear text-white"></i>
-                Pengaturan
-            </a>
-        </li>
         <li>
             <a href="/logout" class="nav-link link-light fw-normal">
                 <i class="bi me-2 fa fa-sign-out text-white"></i>
